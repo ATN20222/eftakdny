@@ -1,0 +1,56 @@
+/* Visits List Page Styles */
+.visits-list-container {
+  width: 100%;
+}
+
+.child-visit-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.child-visit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.child-visit-card .MuiCardContent {
+  flex: 1;
+}
+
+.child-visit-card .MuiCardActions {
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.map-container-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 8px;
+  min-height: 300px;
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .child-visit-card .MuiCardActions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .child-visit-card .MuiCardActions button {
+    width: 100%;
+  }
+}
+

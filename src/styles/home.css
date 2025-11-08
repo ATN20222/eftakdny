@@ -1,0 +1,25 @@
+.stat-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.recent-visits-card {
+  border-radius: 12px;
+}
+
+.visit-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.visit-item:last-child {
+  border-bottom: none;
+}
+
+.visit-item:hover {
+  background-color: #f8f9fa;
+}
+

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
+
+/* RTL adjustments for Material UI components */
+[dir="rtl"] .MuiDrawer-paper {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] .MuiAppBar-root {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] .MuiDrawer-docked {
+  right: 0;
+  left: auto;
+}
+
+/* Page container styles */
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+[dir="rtl"] .page-container {
+  text-align: right;
+}
+
+[dir="ltr"] .page-container {
+  text-align: left;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+[dir="rtl"] .page-header {
+  flex-direction: row-reverse;
+}
+
+.page-title {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* RTL Icon Spacing Fixes */
+[dir="rtl"] .MuiButton-startIcon {
+  margin-left: 8px !important;
+  margin-right: 0 !important;
+}
+
+[dir="rtl"] .MuiButton-endIcon {
+  margin-right: 8px !important;
+  margin-left: 0 !important;
+}
+
+[dir="rtl"] .MuiListItemIcon-root {
+  margin-right: 16px !important;
+  margin-left: 0 !important;
+  min-width: 40px !important;
+}
+
+[dir="ltr"] .MuiListItemIcon-root {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+[dir="rtl"] .MuiChip-icon {
+  margin-left: 4px !important;
+  margin-right: 0 !important;
+}
+
+[dir="rtl"] .MuiInputAdornment-positionStart {
+  margin-right: 8px !important;
+  margin-left: 0 !important;
+}
+
+[dir="rtl"] .MuiInputAdornment-positionEnd {
+  margin-left: 8px !important;
+  margin-right: 0 !important;
+}
+
+/* Fix icon spacing in ListItemButton for RTL */
+[dir="rtl"] .MuiListItemButton-root .MuiListItemIcon-root {
+  margin-right: 16px !important;
+  margin-left: 0 !important;
+}
+
+[dir="ltr"] .MuiListItemButton-root .MuiListItemIcon-root {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Fix spacing between icon and text in buttons */
+[dir="rtl"] .MuiButton-root .MuiButton-startIcon {
+  margin-left: 8px !important;
+  margin-right: 0 !important;
+}
+
+[dir="rtl"] .MuiButton-root .MuiButton-endIcon {
+  margin-right: 8px !important;
+  margin-left: 0 !important;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.map-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 8px;
+  min-height: 400px;
+}
