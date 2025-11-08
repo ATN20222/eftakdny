@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://localhost:7037/api'; // Change to your backend URL
+const API_URL = import.meta.env.VITE_API_URL || 'https://caiman-trusting-quickly.ngrok-free.app/api'; // Change to your backend URL
 
 const api = axios.create({
   baseURL: API_URL,
